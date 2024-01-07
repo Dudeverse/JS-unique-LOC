@@ -11,6 +11,7 @@ function save() {
     let curr = count + " - "
     saveEl.textContent += " " + curr
     countEl.textContent = 0
+    count = 0
 }
 
 
