@@ -1,27 +1,18 @@
-// document.getElementById("count").innerText = 5
+let count = 0
+let countEl = document.getElementById("count-el")
+function increment() {
+    count  = count + 1
+    console.log(count)
+    countEl.textContent = count
+}
 
-// let count = 5
-// count = count + 1
-// console.log(count)
+let saveEl = document.getElementById("save-el")
+function save() {
+    let curr = count + " - "
+    saveEl.textContent += " " + curr
+    countEl.textContent = 0
+}
 
-// Create a variable, bonusPoints. Initialize it as 50. Increase it to 100.
-// Decrease it down to 25, and then finally increase it to 70
-// Console.log the value after each step
-
-let bonusPoints = 50
-console.log(bonusPoints)
-
-bonusPoints = bonusPoints + 50
-console.log(bonusPoints)
-
-bonusPoints = bonusPoints - 75
-console.log(bonusPoints)
-
-bonusPoints = bonusPoints + 45
-console.log(bonusPoints)
-
-bonusPoints = bonusPoints + 2000
-console.log(bonusPoints)
 
 
 
